@@ -1,0 +1,158 @@
+body {
+	font-family: 'Merriweather', serif;
+	font-weight: lighter;
+	margin: 0 0;
+	display: block;
+	text-align: center;
+}
+
+body, html {
+	width: 100%;
+	height: 100%;
+}
+
+/*
+#content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 0;
+	padding: 0 0;
+}*/
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  /*float: left;*/
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.5; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  margin: 30px;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15%;
+  color: white;
+  font-size: 20px;
+}
+
+#gallery img {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.39);
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  right: 15%;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 30px;
+    letter-spacing: 10px;
+}
+
+.banner {
+  /* The image used */
+  box-sizing: border-box;
+  background-image: url("assets/banner.jpg");
+
+  /* Full height */
+  height: 100%;
+  width: 100%;
+  position: relative;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+p {
+	font: 400 25px/1.8 "Lato", sans-serif;
+
+  text-align: justify;
+	color: #7E7E7E;
+}
+
+h3 {
+	font: 400 35px/1.8 "Lato", sans-serif;
+	letter-spacing: 5px;
+}
+
+h1.intro {
+	z-index: 2000;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	color: #FFF;
+	font-weight: lighter;
+	opacity: 0;
+	animation: fade 3s ease-in-out;
+}
+
+img.intro-logo {
+	top: 75%;
+	left: 50%;
+	margin-left: -50px;
+	z-index: 2000;
+	position: absolute;
+	width: 100px;
+	height: 135px;
+	opacity: 1;
+	animation: fade-out 3s linear forwards;
+}
+
+@keyframes fade-out {
+  80% {opacity: 1}
+  100% { opacity: 0 }
+}
+
+@keyframes fade {
+  0%,100% { opacity: 0 }
+  50% { opacity: 1 }
+}
