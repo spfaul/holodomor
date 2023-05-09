@@ -1,5 +1,6 @@
 body {
 	font-family: 'Merriweather', serif;
+  background-color: rgba(49,41,49);
 	font-weight: lighter;
 	margin: 0 0;
 	display: block;
@@ -24,7 +25,7 @@ body, html {
   z-index: -1;
   height: 120%;
   width: 100%;
-  background-color: #A1B2DD;
+  background-color: rgba(49,41,49);
 }
 
 #btnholder {
@@ -150,10 +151,17 @@ body, html {
     line-height: 100px;
 }
 
+.b1 {
+  background-image: url("assets/flag2.png");
+}
+
+.b2 {
+  background-image: url("assets/pan_dark.png");
+}
+
 .banner {
   /* The image used */
   box-sizing: border-box;
-  background-image: url("assets/banner.jpg");
 
   /* Full height */
   height: 100%;
@@ -170,7 +178,7 @@ body, html {
 p {
 	font: 400 25px/1.8 "Lato", sans-serif;
   text-align: justify;
-	color: #7E7E7E;
+	color: lightgray;
 }
 
 @media only screen and (max-device-width: 1000px) {
@@ -183,6 +191,7 @@ h3 {
 	font: 400 35px/1.8 "Lato", sans-serif;
 	letter-spacing: 5px;
   margin-top: 0;
+  color: #fff;
 }
 
 h1.intro {
