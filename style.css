@@ -183,16 +183,17 @@ p {
 
 @media only screen and (max-device-width: 1000px) {
   p {
-    font-size: 4vw;
+    font-size: 3vw;
   }
 }
 
-h3 {
+h3, h1 {
 	font: 400 35px/1.8 "Lato", sans-serif;
 	letter-spacing: 5px;
   margin-top: 0;
   color: #fff;
 }
+
 
 h1.intro {
 	z-index: 2000;
@@ -205,8 +206,10 @@ h1.intro {
 	animation: fade 3s ease-in-out;
 }
 
+
+
 img.intro-logo {
-	top: 75%;
+	top: 65%;
 	left: 50%;
 	margin-left: -50px;
 	z-index: 2000;
